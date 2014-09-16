@@ -50,11 +50,11 @@ namespace SchoenyAzureContactMgr
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "46221070429-f4n393r9gr62d6rsevo14dngpuimttjo.apps.googleusercontent.com",
+                ClientSecret = "NDRtM9gWbkC6OZricVKT8hVy"
+            });
         }
     }
 }
