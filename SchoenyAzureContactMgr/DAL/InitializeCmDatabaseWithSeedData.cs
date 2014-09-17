@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 namespace SchoenyAzureContactMgr.DAL
 {
-    public class InitializeCmDatabaseWithSeedData : DropCreateDatabaseAlways<CmDataContext> //DropCreateDatabaseIfModelChanges<CmDataContext>
+    public class InitializeCmDatabaseWithSeedData : DropCreateDatabaseIfModelChanges<CmDataContext>
     {
         protected override void Seed(CmDataContext context)
         {
