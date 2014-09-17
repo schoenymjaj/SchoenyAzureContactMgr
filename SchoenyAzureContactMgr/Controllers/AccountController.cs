@@ -417,7 +417,7 @@ namespace SchoenyAzureContactMgr.Controllers
                     result = await UserManager.AddLoginAsync(user.Id, info.Login);
                     if (result.Succeeded)
                     {
-                        await UserManager.AddToRoleAsync(user.Id, "canEdit"); //added canEdit role
+                        //await UserManager.AddToRoleAsync(user.Id, "canEdit"); //added canEdit role MNS - Seeding not happening now 9-17-14
                         await SignInAsync(user, isPersistent: false);
                         
                         // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=320771

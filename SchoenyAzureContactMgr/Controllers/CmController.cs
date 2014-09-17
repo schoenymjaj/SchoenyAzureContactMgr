@@ -36,7 +36,7 @@ namespace SchoenyAzureContactMgr.Controllers
         }
 
         // GET: Cm/Create
-        [Authorize(Roles= "canEdit")]
+        //[Authorize(Roles= "canEdit")] MNS - Seeding not happening now 9-17-14
         public ActionResult Create()
         {
             return View();
@@ -47,7 +47,7 @@ namespace SchoenyAzureContactMgr.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "canEdit")]
+        //[Authorize(Roles = "canEdit")] MNS - Seeding not happening now 9-17-14
         public ActionResult Create([Bind(Include = "ContactId,Name,Address,City,State,Zip,Email")] Contact contact)
         {
             if (ModelState.IsValid)
@@ -61,7 +61,7 @@ namespace SchoenyAzureContactMgr.Controllers
         }
 
         // GET: Cm/Edit/5
-        [Authorize(Roles = "canEdit")]
+        //[Authorize(Roles = "canEdit")] MNS - Seeding not happening now 9-17-14
         public ActionResult Edit(int? id)
         {
             if (id == null)
