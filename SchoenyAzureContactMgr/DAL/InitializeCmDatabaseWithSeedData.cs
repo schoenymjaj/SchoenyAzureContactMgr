@@ -25,6 +25,12 @@ namespace SchoenyAzureContactMgr.DAL
                 Description = "The Janet Game."
             }
             );
+            context.GameType.Add(new GameType
+            {
+                Name = "Andrew",
+                Description = "The Andrew Game."
+            }
+            );
 
         }
     }
