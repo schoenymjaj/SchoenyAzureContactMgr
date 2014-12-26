@@ -13,10 +13,11 @@ namespace SchoenyAzureContactMgr.DAL
     public class CmDataContext : DbContext
     {
         public DbSet<GameType> GameType { get; set; }
+        public DbSet<Game> Game { get; set; }
 
         static CmDataContext()
         {
-            Database.SetInitializer(new InitializeCmDatabaseWithSeedData());
+            //Database.SetInitializer(new InitializeCmDatabaseWithSeedData());
         }
 
         public CmDataContext()

@@ -160,6 +160,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CmController.cs" />
+    <Compile Include="Controllers\GamesController.cs" />
     <Compile Include="Controllers\GameTypesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DAL\CmDataContext.cs" />
@@ -167,17 +168,30 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201409161535484_Initial.cs" />
-    <Compile Include="Migrations\201409161535484_Initial.Designer.cs">
-      <DependentUpon>201409161535484_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\201412242239416_AddStringColumnToGameType.cs" />
+    <Compile Include="Migrations\201412242239416_AddStringColumnToGameType.Designer.cs">
+      <DependentUpon>201412242239416_AddStringColumnToGameType.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201409161759420_added register parms.cs" />
-    <Compile Include="Migrations\201409161759420_added register parms.Designer.cs">
-      <DependentUpon>201409161759420_added register parms.cs</DependentUpon>
+    <Compile Include="Migrations\201412242242551_AddBoleanColumnToGameType.cs" />
+    <Compile Include="Migrations\201412242242551_AddBoleanColumnToGameType.Designer.cs">
+      <DependentUpon>201412242242551_AddBoleanColumnToGameType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201412242250460_UpdateUsedFlagOfGameType.cs" />
+    <Compile Include="Migrations\201412242250460_UpdateUsedFlagOfGameType.Designer.cs">
+      <DependentUpon>201412242250460_UpdateUsedFlagOfGameType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201412261649017_AddGameTable.cs" />
+    <Compile Include="Migrations\201412261649017_AddGameTable.Designer.cs">
+      <DependentUpon>201412261649017_AddGameTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201412261702040_AddGamesToGameTable.cs" />
+    <Compile Include="Migrations\201412261702040_AddGamesToGameTable.Designer.cs">
+      <DependentUpon>201412261702040_AddGamesToGameTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Contacts.cs" />
+    <Compile Include="Models\Game.cs" />
     <Compile Include="Models\GameType.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\IEntity.cs" />
@@ -245,6 +259,11 @@
     <Content Include="Views\GameTypes\Details.cshtml" />
     <Content Include="Views\GameTypes\Edit.cshtml" />
     <Content Include="Views\GameTypes\Index.cshtml" />
+    <Content Include="Views\Games\Create.cshtml" />
+    <Content Include="Views\Games\Delete.cshtml" />
+    <Content Include="Views\Games\Details.cshtml" />
+    <Content Include="Views\Games\Edit.cshtml" />
+    <Content Include="Views\Games\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -257,11 +276,20 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201409161535484_Initial.resx">
-      <DependentUpon>201409161535484_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201412242239416_AddStringColumnToGameType.resx">
+      <DependentUpon>201412242239416_AddStringColumnToGameType.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201409161759420_added register parms.resx">
-      <DependentUpon>201409161759420_added register parms.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201412242242551_AddBoleanColumnToGameType.resx">
+      <DependentUpon>201412242242551_AddBoleanColumnToGameType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201412242250460_UpdateUsedFlagOfGameType.resx">
+      <DependentUpon>201412242250460_UpdateUsedFlagOfGameType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201412261649017_AddGameTable.resx">
+      <DependentUpon>201412261649017_AddGameTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201412261702040_AddGamesToGameTable.resx">
+      <DependentUpon>201412261702040_AddGamesToGameTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

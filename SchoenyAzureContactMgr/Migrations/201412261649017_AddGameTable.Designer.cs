@@ -7,13 +7,13 @@ namespace SchoenyAzureContactMgr.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.0-30225")]
-    public sealed partial class Initial : IMigrationMetadata
+    public sealed partial class AddGameTable : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Initial));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddGameTable));
         
         string IMigrationMetadata.Id
         {
-            get { return "201409161535484_Initial"; }
+            get { return "201412261649017_AddGameTable"; }
         }
         
         string IMigrationMetadata.Source

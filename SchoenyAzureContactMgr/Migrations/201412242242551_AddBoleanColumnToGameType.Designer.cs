@@ -7,13 +7,13 @@ namespace SchoenyAzureContactMgr.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.0-30225")]
-    public sealed partial class addedregisterparms : IMigrationMetadata
+    public sealed partial class AddBoleanColumnToGameType : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(addedregisterparms));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddBoleanColumnToGameType));
         
         string IMigrationMetadata.Id
         {
-            get { return "201409161759420_added register parms"; }
+            get { return "201412242242551_AddBoleanColumnToGameType"; }
         }
         
         string IMigrationMetadata.Source
